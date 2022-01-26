@@ -1,0 +1,177 @@
+li{
+    list-style-type: none; /* on ne veut aucune puce*/
+}
+
+ul{
+    display: flex; /* pour definir les element en ligne ou en colonne*/
+    padding-left: 0; /* marge du document*/
+    justify-content: space-around; /* disposer les elements dans l'espace*/
+    margin: 0;  
+}
+
+nav{
+    background-color: rgb(0, 5, 5); /* couleur du fond de la barre*/
+}
+
+a{
+    display: inline-block;
+    padding: 20px 15px;
+    color:  rgb(239, 239, 245); /* couleur du caractère*/
+    text-decoration: none;/* pour enleve souligne*/  
+}
+
+a:hover{ /* quant on survol l'element */
+    background-color: rgb(69, 70, 67);
+    color:rgb(239, 239, 245) /* si on veut changer la couleur du texte au survol*/
+}
+
+body{
+    margin : 0
+}
+
+header{
+    background-image: url('../images/fond.jpg');
+    background-repeat : no-repeat ;
+    background-size:cover ;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1, header p{
+    color:rgb(239, 239, 245);
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    font-family: 'vegetables';
+}
+
+header div{
+    padding-bottom: 20px;
+}
+
+main > section{
+    padding:  50px 250px;
+    background-color: bisque;
+}
+
+h2,h3{
+    text-align: center;
+}
+.section-paire{
+    background-color: rgb(255, 255, 255);
+}
+
+img{
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+#div-droite{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 15px
+}
+
+    #section-2-2{
+        display: flex;
+        flex-wrap:wrap
+}
+
+#img-container img{
+    width : 25%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px
+}
+
+
+#img-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+input:not([type=radio]), textarea{
+    width:100%;
+    box-sizing: border-box; 
+    padding: 12px 20px;
+}
+
+form{
+    width:50%
+}
+
+#form-container{
+    display: flex;
+    justify-content: center;
+}
+
+#input-container{
+    display: flex;
+    justify-content: space-between;
+}
+#input-container div{
+    width:49%;
+}
+
+form > div, fieldset{
+    margin-bottom:12px;
+}
+
+input[type=submit]{
+    background-color: bisque;
+    font-weight: bold;
+    cursor:pointer;
+    transition:0.2s;
+}
+input[type=submit]:hover{
+    background-color: rgb(214, 161, 95);
+}
+
+@media(max-width: 1400px){
+    main > section{
+        padding: 50px 125px;
+    }
+}
+
+@media (max-width: 1200px){
+    #img-container img{
+        width: 33.3333333%
+    } 
+    img{
+        width:100%;
+    }
+
+    #div-droite{
+        width:100%;
+        padding-left:0
+    }    
+}
+
+@media(max-width: 992px){
+    #img-container img{
+        width: 50%
+    }
+
+    form{
+        width:70%
+    }
+}
+@media(max-width:768px){
+    main>section{
+        padding: 50px 60px
+    }
+
+    #img-container img{
+        width: 100%
+    }
+}
+
+@font-face{
+    src: url("../fonts/Vegetables.ttf");
+    font-family: 'vegetables' 
+}
