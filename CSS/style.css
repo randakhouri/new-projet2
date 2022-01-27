@@ -175,3 +175,11 @@ input[type=submit]:hover{
     src: url("../fonts/Vegetables.ttf");
     font-family: 'vegetables' 
 }
+
+footer p{
+    text-align: center;
+    background-color: rgb(133, 131, 131);
+    align-content: "flex end";
+    
+
+}
