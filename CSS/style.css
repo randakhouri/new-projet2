@@ -152,6 +152,7 @@ input[type=submit]:hover{
     }    
 }
 
+
 @media(max-width: 992px){
     #img-container img{
         width: 50%
@@ -176,10 +177,17 @@ input[type=submit]:hover{
     font-family: 'vegetables' 
 }
 
+footer {
+    background-color: rgb(133, 131, 131);  
+
+}
 footer p{
     text-align: center;
-    background-color: rgb(133, 131, 131);
-    align-content: "flex end";
-    
-
+}
+#haut{
+    color: white;
+    background-color: black;
+    position: fixed;
+    bottom: 20px;
+    right: 20px
 }
